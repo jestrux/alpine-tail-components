@@ -1,0 +1,11 @@
+<div class="relative w-64s" x-data="{status: 0.05, radius: 55}">
+    <svg xmlns="http://www.w3.org/2000/svg" class="w-full" viewBox="0 0 150 150">
+      <circle :cx="radius + 20" :cy="radius + 20" :r="radius" fill="#D7F0EA" :stroke-dasharray="`${status * 2 * Math.PI * radius} 360`" stroke-dashoffset="0" stroke-width="4" transform-origin="center" stroke="#1DBF6F" transform="rotate(-90, 0, 0)" />
+      <circle :cx="radius+20" :cy="radius+20" :r="radius - 10" fill="#1DBF6F" stroke-width="15" stroke="#F7F8FF" />
+    </svg>
+  
+    <div class="absolute inset-0 flex flex-col items-center justify-center text-white">
+      <span class="text-xl">Status / 120</span>
+      <span class="text-sm">Cycle Status</span>
+    </div>
+  </div>
